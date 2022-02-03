@@ -6,7 +6,7 @@ export default {
       image: "/images/img-seafood-party.jpg",
       price: 79.99,
       type: "platter",
-      stock: 1,
+      stock: 10,
     },
     {
       name: "seafood party",
