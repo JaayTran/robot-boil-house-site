@@ -14,7 +14,7 @@ export default {
       image: "/images/img-seafood-party.jpg",
       price: 79.99,
       type: "platter",
-      stock: 0,
+      stock: 7,
     },
     {
       name: "luxury seafood party",
@@ -22,7 +22,7 @@ export default {
       image: "/images/img-seafood-party.jpg",
       price: 69.99,
       type: "platter",
-      stock: 0,
+      stock: 5,
     },
     {
       name: "luxury seafood party",
@@ -30,7 +30,7 @@ export default {
       image: "/images/img-seafood-party.jpg",
       price: 69.99,
       type: "platter",
-      stock: 1,
+      stock: 7,
     },
     {
       name: "luxury seafood party",
@@ -38,7 +38,7 @@ export default {
       image: "/images/img-seafood-party.jpg",
       price: 69.99,
       type: "platter",
-      stock: 0,
+      stock: 2,
     },
     {
       name: "luxury seafood party",
