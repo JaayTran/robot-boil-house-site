@@ -1,60 +1,70 @@
-export default {
+import bcrypt from "bcryptjs";
+
+const data = {
+  users: [
+    {
+      name: "Jimmy",
+      email: "admin@email.com",
+      password: bcrypt.hashSync("123", 8),
+      isAdmin: true,
+    },
+    {
+      name: "Timmy",
+      email: "user@email.com",
+      password: bcrypt.hashSync("123", 8),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
       name: "Two Pound Mix",
-      _id: "1",
       image: "/images/img-seafood-party.jpg",
       price: 20,
       type: "platter",
       stock: 10,
     },
     {
-      name: "seafood party",
-      _id: "2",
+      name: "Seafood Party",
       image: "/images/img-seafood-party.jpg",
       price: 30,
       type: "platter",
       stock: 7,
     },
     {
-      name: "luxury seafood party",
-      _id: "3",
+      name: "Luxury Seafood Party",
       image: "/images/img-seafood-party.jpg",
       price: 40,
       type: "platter",
       stock: 5,
     },
     {
-      name: "luxury",
-      _id: "4",
+      name: "Shrimp (1 lb)",
       image: "/images/img-seafood-party.jpg",
       price: 50,
-      type: "platter",
+      type: "boil",
       stock: 7,
     },
     {
-      name: "seafood",
-      _id: "5",
+      name: "Clams (1 lb)",
       image: "/images/img-seafood-party.jpg",
       price: 60,
-      type: "platter",
+      type: "boil",
       stock: 2,
     },
     {
-      name: "party",
-      _id: "6",
+      name: "Green Shell Mussels (1 lb)",
       image: "/images/img-seafood-party.jpg",
       price: 70,
-      type: "platter",
+      type: "boil",
       stock: 1,
     },
     {
-      name: "luxury party",
-      _id: "7",
+      name: "Black Shell Mussels (1 lb)",
       image: "/images/img-seafood-party.jpg",
       price: 80,
-      type: "platter",
+      type: "boil",
       stock: 0,
     },
   ],
 };
+export default data;
