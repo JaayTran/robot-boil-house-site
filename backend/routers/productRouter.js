@@ -9,8 +9,20 @@ const productRouter = express.Router();
 productRouter.get(
   "/",
   expressAsyncHandler(async (req, res) => {
-    const products = await Product.find({});
+    const category = req.query.category || "";
+    const categoryFilter = category ? { category } : {};
+    const products = await Product.find({
+      ...categoryFilter,
+    });
     res.send(products);
+  })
+);
+
+productRouter.get(
+  "/categories",
+  expressAsyncHandler(async (req, res) => {
+    const categories = await Product.find().distinct("category");
+    res.send(categories);
   })
 );
 
@@ -44,7 +56,7 @@ productRouter.post(
       name: "sample name " + Date.now(),
       image: "/images/p1.jpg",
       price: 0,
-      type: "sample type",
+      category: "sample category",
       stock: 0,
       description: "sample description",
     });
@@ -64,7 +76,7 @@ productRouter.put(
       product.name = req.body.name;
       product.price = req.body.price;
       product.image = req.body.image;
-      product.type = req.body.type;
+      product.category = req.body.type;
       product.stock = req.body.stock;
       product.description = req.body.description;
       const updatedProduct = await product.save();
