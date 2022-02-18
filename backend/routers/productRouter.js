@@ -44,7 +44,7 @@ productRouter.post(
       name: "sample name " + Date.now(),
       image: "/images/p1.jpg",
       price: 0,
-      type: "sample type",
+      category: "sample category",
       stock: 0,
       description: "sample description",
     });
