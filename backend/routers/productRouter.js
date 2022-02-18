@@ -64,7 +64,7 @@ productRouter.put(
       product.name = req.body.name;
       product.price = req.body.price;
       product.image = req.body.image;
-      product.type = req.body.type;
+      product.category = req.body.category;
       product.stock = req.body.stock;
       product.description = req.body.description;
       const updatedProduct = await product.save();
