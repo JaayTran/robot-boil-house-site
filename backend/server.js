@@ -12,10 +12,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect(process.env.MONGODB_URL || "mongodb://localhost/robot-boil", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(process.env.MONGODB_URL || "mongodb://localhost/robot-boil");
 
 app.use("/api/uploads", uploadRouter);
 app.use("/api/users", userRouter);
