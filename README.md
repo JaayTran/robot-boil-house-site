@@ -1,4 +1,5 @@
 Reactive fully functional Ecommerce Website for Restaurant. All buttons and links are fully functional.
+Features such as adding, editing and uploading products and users are only allowed through administrator accounts.
 
 Restaurant homepage:
 ![homepage](https://user-images.githubusercontent.com/38023521/157137832-6d2b62fc-2955-4934-becf-4c48d48c0bc3.png)
@@ -15,7 +16,7 @@ Order Summary page:
 Payments Page with Paypal Support:
 ![checkout screen paypal](https://user-images.githubusercontent.com/38023521/157138054-17706146-2304-4bc0-ac3c-d00a8fb37fa6.png)
 
-Create, Edit products page with option to upload custom pictures locally:
+Create, Edit products page with option to upload local pictures to database:
 ![create and update product](https://user-images.githubusercontent.com/38023521/157138432-f6567923-2047-406f-b87f-d6bc4d5bf5e0.png)
 
 Data Representation Page:
